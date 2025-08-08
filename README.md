@@ -1,34 +1,36 @@
-# Module-1-Assignment-Highridge-Construction-Company-Payment-Slips
+# Worker Payment Slip Program
 
-# Worker Payment Slip Generator
+## Description
+This project contains two programs — one in Python and one in R — that generate payment slips for 400 dynamically created workers.  
+The scripts assign employee levels based on the following rules:
 
-## Overview
-
-This project contains two scripts (Python and R) that dynamically generate payment slips for 400 workers based on gender and salary conditions.
+1. If the salary is greater than $10,000 and less than $20,000 → Employee Level = "A1".
+2. If the salary is greater than $7,500 and less than $30,000 **and** the employee is female → Employee Level = "A5-F".
 
 ## Files
-
-- `payment_slips.py`: Python script to generate the data and assign employee levels.
-- `payment_slips.R`: R version of the script performing the same task.
-- `payment_slips.csv`: Output file containing the generated payment slips.
-- `README.txt`: Instructions and overview.
-
-## Instructions
-
-### Python
-
-1. Run the `payment_slips.py` script in any Python 3 environment.
-2. The script will generate a `payment_slips.csv` file containing the output.
-
-### R
-
-1. Open `payment_slips.R` in any R environment (e.g., RStudio).
-2. Run the script to generate the same output in R.
-
-Ensure you have `pandas` installed in Python:
-```
-pip install pandas
-```
+- worker_payment.py  → Python implementation
+- worker_payment.R   → R implementation
+- README.md          → Instructions for running the code
 
 ---
 
+## Requirements
+
+### For Python:
+- Python 3.x installed
+- Any IDE (VS Code, PyCharm, etc.) or terminal
+
+### For R:
+- R 4.x installed
+- RStudio (optional, but recommended)
+
+---
+
+## Instructions
+
+### **Running the Python Program**
+1. Open a terminal or your IDE.
+2. Navigate to the folder containing `worker_payment.py`.
+3. Run:
+   ```bash
+   python payment_slips.py
